@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --green: hsl(75, 94%, 57%);
+    --white: hsl(0, 0%, 100%);
+    --grey700: hsl(0, 0%, 20%);
+    --grey800: hsl(0, 0%, 12%);
+    --grey900: hsl(0, 0%, 8%);
+}
+
+body {
+    background-color: var(--grey900);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: Inter;
+}
+
+.card {
+    background-color: var(--grey800);
+    width: 360px;
+    height: 610px;
+    padding: 32px;
+    display: flex
+;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.profile-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.name {
+    color: var(--white);
+    margin-bottom: 8px;
+}
+
+.address {
+    color: var(--green);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.role {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--white);
+}
+
+.social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.btn {
+    background-color: var(--grey700);
+    width: 292px;
+    height: 51px;
+    border-radius: 8px;
+    color: var(--white);
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 16px 88px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: var(--green);
+}
