@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --white: hsl(0, 0%, 100%);
+    --stone-100: hsl(30, 54%, 90%);
+    --stone-150: hsl(30, 18%, 87%);
+    --stone-600: hsl(30, 10%, 34%);
+    --stone-900: hsl(24, 5%, 18%);
+    --brown-800: hsl(14, 45%, 36%);
+    --rose-800: hsl(332, 51%, 32%);
+    --rose-50: hsl(330, 100%, 98%);
+}
+
+body {
+    background-color: var(--stone-100);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 32px;
+    border-radius: 20px;
+    width: 680px;
+    height: 1686px;
+    margin: 100px 0;
+}
+
+.omellete-img {
+    border-radius: 10px;
+    margin-bottom: 16px;
+}
+
+.recipe-name{
+    font-size: 32px;
+    font-family: Young Serif;
+    font-weight: 400;
+}
+
+.recipe-description,
+.nutri-description {
+    font-family: Outfit;
+    font-size: 15px;
+    line-height: 150%;
+    color: var(--stone-600);
+    margin-bottom: 16px;
+}
+
+.preparation-time {
+    background-color: var(--rose-50);
+    border-radius: 10px;
+    padding: 24px;
+    margin-bottom: 8px;
+}
+
+.prep-heading {
+    font-size: 22px;
+    color: var(--rose-800);
+    font-weight: 600;
+    font-family: Outfit;
+    margin-bottom: 16px;
+}
+
+.prep-list {
+    list-style-position: inside;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    color: var(--stone-600);
+    font-family: Outfit;
+    font-size: 15px;
+}
+
+.total,
+.cook,
+.prep {
+  color: var(--stone-900);
+  font-weight: 600;
+  margin-left: 8px;
+}
+
+.ingre-heading,
+.inst-heading,
+.nutri-heading {
+    color: var(--brown-800);
+    font-family: Young Serif;
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.ingre-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    font-family: Outfit;
+    font-size: 15px;
+    list-style-position: inside;
+    color: var(--stone-600);
+    margin-bottom: 16px;
+}
+
+.ingredients {
+    margin-left: 8px;
+}
+
+hr {
+    color: var(--stone-600);
+    opacity: 0.3;
+}
+
+.inst-list {
+    list-style-position: outside;
+    padding-left: 16px;
+    font-family: Outfit;
+    font-size: 15px;
+    color: var(--stone-600);
+    line-height: 150%;
+  }
+  
+  .inst-list li {
+    margin-bottom: 16px; 
+    padding-left: 16px;
+  }
+  
+  .steps {
+    color: var(--stone-900);
+    font-weight: 600;
+  }
+
+  .nutri-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 210px;
+    margin-left: 24px;
+  }
+  
+  .nutrient {
+    width: 100px; 
+    font-family: Outfit;
+    font-size: 15px;
+    line-height: 150%;
+    color: var(--stone-600);
+  }
+  
+  .nutri-value {
+    font-family: Outfit;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--brown-800);
+  }
+
+  /* Mobile Responsive Design */
+
+  @media screen and (max-width: 560px) {
+    body {
+      background-color: var(--white);
+    }
+
+    .card {
+      width: 100%;
+      height: auto;
+      margin: 0;
+      border-radius: 0;
+    }
+
+    .omellete-img {
+        margin: -32px -32px 0 -32px;
+      }
+
+      .recipe-name,
+      .ingre-heading,
+      .inst-heading,
+      .nutri-heading  {
+        font-size: 40px;
+      }
+
+      .recipe-description {
+        font-size: 18px;
+      }
+    
+      .prep-heading {
+        font-size: 24px;
+      }
+
+      .prep-list {
+        font-size: 18px;
+      }
+
+      .inst-list,
+      .ingre-list,
+      .nutri-description,
+      .nutrient,
+      .nutri-value {
+        font-size: 20px;
+      }
+
+  }
+    
+  
+
+
