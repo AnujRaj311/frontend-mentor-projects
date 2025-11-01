@@ -109,6 +109,12 @@ h1 {
     cursor: pointer;
 }
 
+.submit:hover {
+    background: linear-gradient(to right, #FF5474, #FF6740);
+    box-shadow: 0px 0px 20px 4px #FECDC9;
+    border: none;
+}
+
 
 .error input {
     background-color: #f8d7da;    
