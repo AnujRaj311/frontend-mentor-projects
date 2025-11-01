@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+ /* ### Primary */
+--Red: hsl(4, 100%, 67%);
+
+/* ### Neutral */
+--Blue-800: hsl(234, 29%, 20%);
+--Blue-700: hsl(235, 18%, 26%);
+--Grey: hsl(0, 0%,58%);
+--White: hsl(0, 0%, 100%);
+}
+
+body {
+    background-color: var(--Blue-700);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: Roboto;
+    font-size: 16px;
+}
+
+.main {
+    width: 50%;
+    min-width: 760px;
+    background-color: var(--White);
+    padding: 1.25rem;
+    border-radius: 2rem;
+    display: flex;
+    gap: 3rem;
+}
+
+.left {
+    width: 50%;
+}
+
+.right {
+    width: 50%;
+}
+
+#form {
+    padding: 4rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.bene-1,
+.bene-2,
+.bene-3 {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.benefits svg {
+    flex-shrink: 0; 
+    width: 21px;     
+    height: 21px;
+  }
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    margin-top: 1.25rem;
+}
+
+.email-label {
+    font-size: 0.75rem;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+}
+
+.email-input {
+    font-size: 1rem;
+    padding: 0.75em;
+    height: 3rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--Grey);
+}
+
+.email-input:focus {
+    outline: none;
+}
+
+.submit {
+    font-size: 1rem;
+    padding: 0.75em;
+    height: 3rem;
+    border-radius: 0.5rem;
+    background-color: var(--Blue-800);
+    color: var(--White);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+
+.error input {
+    background-color: #f8d7da;    
+    border: 1px solid var(--Red);
+    color: var(--Red);
+}
+
+.error input::placeholder,
+.error .error-email {
+    color: var(--Red);
+}
+
+/* popup css */
+
+.popup {
+    width: 25%;
+    min-width: 462px;
+    padding: 3rem;
+    border-radius: 2rem;
+    background-color: var(--White);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.hidden {
+    display: none;
+}
+
+
+
+/* responsive design */
+
+@media screen and (max-width: 800px) {
+    body {
+      background-color: var(--White);
+    }
+  
+    .main {
+      flex-direction: column-reverse;
+      width: 100%;
+      background-color: var(--White);
+      padding: 0;
+      min-width: unset;
+      gap: unset;
+    }
+  
+    .left {
+      width: 100%;
+    }
+  
+    .right {
+      width: 100%;
+    }
+  
+    .right svg {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  
+    .popup {
+      max-width: 375px;
+      background-color: var(--White);
+      gap: 1.5rem;
+    }
+
+    .dismiss-btn {
+        margin-top: 400px;
+    }
+
+    .hidden {
+        display: none;
+    }
+  }
+  
+  
